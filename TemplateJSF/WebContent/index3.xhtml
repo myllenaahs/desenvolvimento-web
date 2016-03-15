@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<head>
+<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<table id="page">
+		<tr id="header-container">
+			<td colspan="2" id="borda"><ui:insert name="header">
+					<ui:include src="template/header.xhtml" />
+				</ui:insert></td>
+		</tr>
+
+		<tr>
+			<td id="menu"><ui:insert name="menu">
+					<ui:include src="template/menu.xhtml" />
+				</ui:insert></td>
+			<td id="content"><ui:insert name="content" />
+			<ui:include src="template/content.xhtml" /></td>
+		</tr>
+
+		<tr id="footer-container">
+			<td colspan="2" id="borda"><ui:insert name="footer">
+					<ui:include src="template/footer.xhtml" />
+				</ui:insert></td>
+		</tr>
+	</table>
+</body>
+</html>
